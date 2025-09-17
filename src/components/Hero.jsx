@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Button from "./Button";
 import { TiLocationArrow } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
@@ -11,10 +11,10 @@ gsap.registerPlugin(ScrollTrigger);
 // --- HELPER ---
 // It's good practice to keep your data definitions separate.
 const videoData = [
-  { id: 1, src: "videos/hero-1.mp4", poster: "videos/poster-1.jpg" },
-  { id: 2, src: "videos/hero-2.mp4", poster: "videos/poster-2.jpg" },
-  { id: 3, src: "videos/hero-3.mp4", poster: "videos/poster-3.jpg" },
-  { id: 4, src: "videos/hero-4.mp4", poster: "videos/poster-4.jpg" },
+  { id: 1, src: "videos/hero-1.av1.mp4", poster: "videos/poster-1.jpg" },
+  { id: 2, src: "videos/hero-2.av1.mp4", poster: "videos/poster-2.jpg" },
+  { id: 3, src: "videos/hero-3.av1.mp4", poster: "videos/poster-3.jpg" },
+  { id: 4, src: "videos/hero-4.av1.mp4", poster: "videos/poster-4.jpg" },
 ];
 
 const Hero = () => {
